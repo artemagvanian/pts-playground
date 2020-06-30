@@ -1,13 +1,11 @@
 {
-  "name": "playground",
-  "main": "src/index.js",
+  "name": "pts-playground",
+  "version": "0.1.0",
+  "author": "Artem Agvanian <artemagvanian@icloud.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --hot"
   },
-  "author": "Artem Agvanian",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
@@ -24,6 +22,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "pts": "^0.9.4"
+    "pts": "^0.9.4",
+    "ramda": "^0.27.0"
   }
 }
